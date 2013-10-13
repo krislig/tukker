@@ -7,4 +7,4 @@ class TestHomePage(FunctionalTest):
 		self.browser.get(ROOT + '/tukker/')
 
 		body = self.browser.find_element_by_tag_name('body')
-		self.assertIn('Messages with 300 Chars', body.text)
+		self.assertIn('Message with 300 Chars', body.text)

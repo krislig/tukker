@@ -38,7 +38,7 @@ def start_web2py_server():
     #noreload ensures single process
     print(os.path.curdir)    
     return subprocess.Popen([
-            'python', '../../web2py.py', 'runserver', '-a "passwd"', '-p 8001'
+            '../../web2py.exe', 'runserver', '-a "passwd"', '-p 8001'
     ])
 
 def run_functional_tests(pattern=None):
