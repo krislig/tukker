@@ -11,8 +11,8 @@ class TestHomePage(FunctionalTest):
 		self.assertEqual(response_code, 200)
 
 	def test_has_right_title(self):
-		title=self.browser.find_element_by_tag_name('title')
-		self.assertEqual('Microposts on Steroids', title.text)
+		title=self.browser.title
+		self.assertEqual('Microposts On Steroids', title)
 
 	def test_has_right_heading(self):
 		body = self.browser.find_element_by_tag_name('body')
