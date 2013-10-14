@@ -16,7 +16,7 @@ class TestHomePage(FunctionalTest):
 
 	def test_has_right_heading(self):
 		body = self.browser.find_element_by_tag_name('body')
-		self.assertIn('Message with 300 Chars', body.text)
+		self.assertIn('Messages With 300 Chars', body.text)
 
 
 class TestPrivacyPage(FunctionalTest):
