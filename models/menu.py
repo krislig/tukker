@@ -7,7 +7,7 @@
 
 response.logo = A(B('web',SPAN(2),'py'),XML('&trade;&nbsp;'),
                   _class="brand",_href="http://www.web2py.com/")
-response.title = request.application.replace('_',' ').title()
+response.title = 'Microposts On Steroids'
 response.subtitle = ''
 
 ## read more at http://dev.w3.org/html5/markup/meta.name.html
@@ -24,10 +24,13 @@ response.google_analytics_id = None
 #########################################################################
 
 response.menu = [
-    (T('Home'), False, URL('default', 'index'), [])
+    (T('Home'), False, URL('default', 'index'), []),
+    (T('Help'), False, URL('default', 'help'), []),
+    (T('Login'), False, URL('default', 'user', 'login'), []),
+    (T('Privacy'), False, URL('default', 'privacy'), [])
 ]
 
-DEVELOPMENT_MENU = True
+DEVELOPMENT_MENU = False
 
 #########################################################################
 ## provide shortcuts for development. remove in production

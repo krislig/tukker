@@ -15,18 +15,13 @@
           </div>
           <div class="navbar-collapse collapse">
             <nav>
-              <ul class="nav navbar-nav navbar-right">
-                <li><a href="{{=URL(c="default",f="index")}}">Home</a></li>
-                <li><a href="{{=URL(c="default",f="help")}}">Help</a></li>
-                <li><a href="{{=URL(c="default",f="login")}}">Login</a></li>
-                <li><a href="{{=URL(c="default",f="privacy")}}">Privacy</a></li>
-              </ul>
+              {{=MENU(response.menu, _class='nav navbar-nav navbar-right')}}
             </nav>
           </div>
         </div>
       </header>
       <section id="main">
-        <div class="alert">{{=response.flash or ''}}</div>
+        <div class="alert alert-info">{{=response.flash or ''}}</div>
         {{include}}
       </section>
       <footer>
