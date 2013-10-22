@@ -3,32 +3,26 @@
   <head>
     <title>Microposts On Steroids</title>
     {{response.files.append(URL('static', 'css/bootstrap.min.css'))}}
-    {{response.files.append(URL('static', 'css/custom.css'))}}
+    {{response.files.append(URL('static', 'css/jumbotron-narrow.css'))}}
     {{include 'web2py_ajax.html'}}
   </head>
   <body>
     <div class="container">
       <header>
-        <div class="row">
-          <div class="col-md-4">
-            <h1>Tukker.Me</h1>
+        <div class="navbar navbar-default">
+          <div class="navbar-header">
+            <a class="navbar-brand" href="#">Tukker.Me</a>
           </div>
-          <div class="col-md-2"></div>
-          <nav>
-            <div class="col-md-1">
-              <a href="#">Home</a>
-            </div>
-            <div class="col-md-1">
-              <a href="#">Help</a>
-            </div>
-            <div class="col-md-1">
-              <a href="#">Login</a>
-            </div>
-            <div class="col-md-1">
-              <a href="#">Privacy</a>
-            </div>
-          </nav>
-          <div class="col-md-2"></div>                  
+          <div class="navbar-collapse collapse">
+            <nav>
+              <ul class="nav navbar-nav navbar-right">
+                <li><a href="#">Home</a></li>
+                <li><a href="#">Help</a></li>
+                <li><a href="#">Login</a></li>
+                <li><a href="#">Privacy</a></li>
+              </ul>
+            </nav>
+          </div>
         </div>
       </header>
       <section id="main">

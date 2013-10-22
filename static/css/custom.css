@@ -8,3 +8,13 @@
     background: black;
     line-height: 34px;
 }*/
+
+body{
+    padding: 30px;
+}
+
+@media (min-width: 768px) {
+  .container {
+    max-width: 730px;
+  }
+}
