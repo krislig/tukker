@@ -16,10 +16,10 @@
           <div class="navbar-collapse collapse">
             <nav>
               <ul class="nav navbar-nav navbar-right">
-                <li><a href="#">Home</a></li>
-                <li><a href="#">Help</a></li>
-                <li><a href="#">Login</a></li>
-                <li><a href="#">Privacy</a></li>
+                <li><a href="{{=URL(c="default",f="index")}}">Home</a></li>
+                <li><a href="{{=URL(c="default",f="help")}}">Help</a></li>
+                <li><a href="{{=URL(c="default",f="login")}}">Login</a></li>
+                <li><a href="{{=URL(c="default",f="privacy")}}">Privacy</a></li>
               </ul>
             </nav>
           </div>
@@ -30,7 +30,7 @@
           <h1>Messages With 300 Chars</h1>
           <p>Welcome to <strong>Tukker.Me</strong>, the new way to 
           tell your friends and the world what you are thinking.</p>
-          <a href="#" class="btn btn-lg btn-primary">Register</a>
+          <a href="{{=URL(c="default",f="user",args="register")}}" class="btn btn-lg btn-primary">Register</a>
         </div>
       </section>
       <footer>
@@ -38,9 +38,9 @@
           <div class="navbar-collapse collapse">
             <nav>
               <ul class="nav navbar-nav navbar-right">
-                <li><a href="#">About</a></li>
-                <li><a href="#">Terms</a></li>
-                <li><a href="#">Contact</a></li>
+                <li><a href="{{=URL(c="default",f="about")}}">About</a></li>
+                <li><a href="{{=URL(c="default",f="terms")}}">Terms</a></li>
+                <li><a href="{{=URL(c="default",f="contact")}}">Contact</a></li>
               </ul>
             </nav>
           </div>
