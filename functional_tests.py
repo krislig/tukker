@@ -4,6 +4,7 @@ except: import unittest
 import sys
 from urllib.request import urlopen
 sys.path.append('./fts/lib')
+sys.path.append('../../gluon')
 from selenium import webdriver
 import subprocess
 import sys

@@ -18,7 +18,7 @@ def index():
     if you need a simple wiki simple replace the two lines below with:
     return auth.wiki()
     """
-    response.flash = T("Welcome to web2py!")
+    response.flash = T("Welcome to Tukker.Me")
     return dict()
 
 
@@ -37,6 +37,9 @@ def user():
         @auth.requires_permission('read','table name',record_id)
     to decorate functions that need access control
     """
+    if request.args[0] == "register":
+        response.title = "Tukker.Me Registration"
+
     return dict(form=auth())
 
 @cache.action()

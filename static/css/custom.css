@@ -18,3 +18,7 @@ body{
     max-width: 730px;
   }
 }
+
+.jumbotron.c h1{
+    font-size: 50px;
+}
