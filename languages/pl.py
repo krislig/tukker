@@ -185,6 +185,7 @@
 'Use (...)&(...) for AND, (...)|(...) for OR, and ~(...)  for NOT to build more complex queries.': 'Użyj (...)&(...) jako AND, (...)|(...) jako OR oraz ~(...)  jako NOT do tworzenia bardziej skomplikowanych zapytań.',
 'User %(id)s Registered': 'Użytkownik %(id)s został zarejestrowany',
 'User ID': 'ID użytkownika',
+'value already in database or empty': 'value already in database or empty',
 'Verify Password': 'Potwierdź hasło',
 'Videos': 'Videos',
 'View': 'Widok',

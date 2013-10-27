@@ -45,7 +45,7 @@ crud, service, plugins = Crud(db), Service(), PluginManager()
 
 ## auth extra fields
 auth.settings.extra_fields['auth_user'] = [
-    Field('nickname', 'string', notnull=True, length=20),
+    Field('nickname', 'string', notnull=True, length=20, unique=True),
     Field('image', 'upload')
 ]
 
