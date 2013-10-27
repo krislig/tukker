@@ -1,11 +1,11 @@
 #!/usr/bin/env python
 try: import unittest2 as unittest #for Python <= 2.6
 except: import unittest
-import sys
-from urllib.request import urlopen
+import sys, urllib2
 sys.path.append('./fts/lib')
 sys.path.append('../../gluon')
 from selenium import webdriver
+
 import subprocess
 import sys
 import os.path
@@ -31,7 +31,7 @@ class FunctionalTest(unittest.TestCase):
         url     the url to check for 
         return  the response code of the given url
         """
-        handler = urlopen(url)
+        handler = urllib2.urlopen(url)
         return handler.getcode()
 
 

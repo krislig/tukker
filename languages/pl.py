@@ -98,6 +98,7 @@
 'Layouts': 'Layouts',
 'Live Chat': 'Live Chat',
 'Logged in': 'Logged in',
+'Logged out': 'Logged out',
 'login': 'login',
 'Login': 'Zaloguj',
 'logout': 'logout',

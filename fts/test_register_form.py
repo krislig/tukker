@@ -1,5 +1,6 @@
 import os
 from os import path
+from dal import DAL
 
 from functional_tests import FunctionalTest, ROOT
 
