@@ -42,6 +42,18 @@ def user():
 
     return dict(form=auth())
 
+def profile():
+    nickname = request.args[0]
+
+    response.title = nickname + "'s Profile"
+
+    result = db(db.auth_user.nickname == nickname).select()[0]
+
+    name = result.first_name + " " + result.last_name
+    image = result.image
+
+    return dict(nickname = nickname, name = name, image = image)
+
 @cache.action()
 def download():
     """
